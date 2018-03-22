@@ -1,0 +1,8 @@
+{
+  "name": "iHelper",
+  "app_id": "a3cee3be",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
