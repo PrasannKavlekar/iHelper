@@ -8,13 +8,10 @@ import { NavController , App } from 'ionic-angular'
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public app : App) {
+  constructor(public navCtrl: NavController, ) {
 
   }
 
-  logout(){
-    const root = this.app.getRootNav();
-    root.popToRoot();
-  }
+  
 
 }
