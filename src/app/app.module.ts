@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import {AuthService } from '../providers/auth-service/auth-service';
+import {HttpModule, Http} from '@angular/http';
 import { WelcomePage } from '../pages/welcome/welcome'
 import { LoginPage } from '../pages/login/login'
 import { SignupPage } from '../pages/signup/signup'
@@ -26,7 +28,7 @@ import { CartPage } from '../pages/cart/cart';
     TabsPage
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -42,7 +44,7 @@ import { CartPage } from '../pages/cart/cart';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen, AuthService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })

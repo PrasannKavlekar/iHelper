@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {Http, Headers} from '@angular/http';
 import 'rxjs/add/operator/map';
 
-let apiUrl = 'http://yourdomain.com/PHP-Slim-Restful/api/';
+let apiUrl = 'http://localhost/PHP-Slim-Restful/api/';
 
 @Injectable()
 export class AuthService {
@@ -26,3 +26,4 @@ export class AuthService {
   }
 
 }
+
